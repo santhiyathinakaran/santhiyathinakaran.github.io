@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Santhiya P | Full Stack Developer (Python, React.js, MySQL)</title>
+<meta name="description" content="Portfolio of Santhiya P, Python full stack developer in Tirunelveli. Django, Flask, Tornado, React.js and MySQL projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#projects">Skip to projects</a>
+<header class="bar">
+  <a class="brand" href="#top"><span class="mark">SP</span>Santhiya P</a>
+  <nav aria-label="Main">
+    <a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a class="cta" href="#contact">Contact</a>
+    <button id="theme" class="icon" type="button" aria-label="Switch colour theme">◐</button>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-text">
+    <p class="status"><i></i>Open to entry-level developer roles</p>
+    <h1>Santhiya P</h1>
+    <p class="role" aria-live="off"><span id="type">Python Full Stack Developer</span><b class="caret"></b></p>
+    <p class="lead">I build complete web apps, from the MySQL tables and REST APIs to the screens people tap. Based in Tirunelveli, currently a Full Stack Developer Intern at Bevywise.</p>
+    <p class="actions">
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn" href="assets/Santhiya_P_Resume.pdf" download>Download resume</a>
+    </p>
+    <p class="social"><a href="https://github.com/santhiyathinakaran">GitHub</a><a href="https://linkedin.com/in/santhiyathinakaran">LinkedIn</a><a href="https://tirunelveli-healthcare.onrender.com">Live demo</a></p>
+  </div>
+  <div class="visual" aria-hidden="true">
+    <div class="win">
+      <div class="dots"><i></i><i></i><i></i><span>tirunelveli-healthcare</span></div>
+      <div class="win-body">
+        <p class="tiny">Your OPD token</p>
+        <p class="token">T-24</p>
+        <p class="tiny">Now serving T-19. About 5 patients ahead.</p>
+        <div class="bar-track"><div></div></div>
+        <div class="sos">Emergency SOS · Call 108</div>
+      </div>
+    </div>
+    <span class="chip c1">Django</span><span class="chip c2">WebRTC</span><span class="chip c3">MySQL</span><span class="chip c4">Claude API</span>
+  </div>
+</section>
+
+<section class="stats" aria-label="Highlights">
+  <div><b data-n="5">5</b><span>projects built</span></div>
+  <div><b data-n="40">40</b><span>hospitals modeled</span></div>
+  <div><b data-n="9">9</b><span>export formats in one dashboard</span></div>
+  <div><b data-n="3">3</b><span>languages in the voice assistant</span></div>
+</section>
+
+<section id="projects" class="block">
+  <h2>Projects</h2>
+  <p class="sub">Three full stack builds and two frontend builds.</p>
+  <div class="grid">
+
+    <article class="card wide reveal">
+      <div class="shot health"><span>T-24</span><span>T-25</span><span class="on">T-26</span><span>SOS</span></div>
+      <div class="body">
+        <h3>Smart Healthcare &amp; Telehealth Platform</h3>
+        <p class="tags"><span>Python</span><span>Django</span><span>WebRTC</span><span>MySQL</span></p>
+        <p>A deployed platform modeling 40 Tirunelveli hospitals. Patients book OPD tokens, reserve slots in advance, cancel appointments and track their token. The emergency SOS flow requests a 108 ambulance, captures location and speaks Tamil first-aid guidance.</p>
+        <ul>
+          <li>Tamil, Tanglish and English voice assistant on the Claude API, with a rule-based fallback and rate limiting.</li>
+          <li>WebRTC video consultation and a login-protected staff portal.</li>
+          <li>Django tests, secrets in environment variables, deployed on Render.</li>
+        </ul>
+        <p class="links"><a href="https://tirunelveli-healthcare.onrender.com">Live demo</a><a href="https://github.com/santhiyathinakaran">GitHub</a></p>
+      </div>
+    </article>
+
+    <article class="card reveal">
+      <div class="shot chart"><i style="--h:40%"></i><i style="--h:68%"></i><i style="--h:52%"></i><i style="--h:86%"></i><i style="--h:62%"></i></div>
+      <div class="body">
+        <h3>Materials Inventory Dashboard</h3>
+        <p class="tags"><span>Tornado</span><span>MySQL</span><span>Chart.js</span></p>
+        <p>A live dashboard where only the expiry date is editable and every change is logged with a name and reason.</p>
+        <ul>
+          <li>REST API for edit, delete, undo, redo and restore. Status is derived from an append-only audit table.</li>
+          <li>E-mail alerts on every change, live charts, CSV, Excel and PDF exports.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="card reveal">
+      <div class="shot track"><span class="done">Export scan</span><span class="done">Arrived at hub</span><span>Out for delivery</span></div>
+      <div class="body">
+        <h3>Courier Package Tracking Gateway</h3>
+        <p class="tags"><span>Flask</span><span>REST</span><span>JSON</span></p>
+        <p>Enter a UPS tracking number and see the shipment status and checkpoints on a responsive dashboard.</p>
+        <ul>
+          <li>POST /track with 1Z format validation and a carrier-aggregator API behind it.</li>
+          <li>Clear handling for HTTP 200, 400, 404 and 500.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="card mini reveal"><div class="body">
+      <h3>Smart College Campus System (CampusConnect)</h3><p class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span></p>
+      <p>Frontend for a smart college life portal with Home, Timetable, Assignments, Events, Notices and Profile pages, a welcome dashboard for deadlines, events and announcements, and a Quick Access section.</p></div></article>
+    <article class="card mini reveal"><div class="body">
+      <h3>Foodie Website</h3><p class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span></p>
+      <p>Food ordering website frontend with Home, Menu, Cart (with an item counter) and Contact sections, and an Order Now call to action on a warm, image-led hero.</p></div></article>
+  </div>
+</section>
+
+<section id="experience" class="block">
+  <h2>Experience and education</h2>
+  <ol class="timeline">
+    <li class="reveal"><p class="when">Sep 2026 to present</p><h3>Full Stack Developer Intern, Bevywise</h3><p>Python, Flask, JavaScript, MySQL and MS SQL Server tasks. Contributing to database design, debugging and feature delivery with Git and GitHub.</p></li>
+    <li class="reveal"><p class="when">Jun 2026 to present</p><h3>Python Full Stack Development, Dhatchan Academy</h3><p>Python, Django, Flask, MySQL, HTML, CSS, JavaScript and React.js.</p></li>
+    <li class="reveal"><p class="when">Jul 2025 to Oct 2025</p><h3>Web Designing Intern, Malaris Software Solutions</h3><p>Built a responsive perfume e-commerce website with HTML, CSS, Bootstrap and JavaScript, tested on mobile, tablet and desktop.</p></li>
+    <li class="reveal"><p class="when">2023 to 2026</p><h3>BSc Information Technology</h3><p>Rose Mary College of Arts and Science, Tirunelveli. CGPA 6.85.</p></li>
+  </ol>
+</section>
+
+<section id="skills" class="block">
+  <h2>Skills</h2>
+  <div class="skillgrid">
+    <div><h3>Languages</h3><p class="tags"><span>Python</span><span>JavaScript (ES6)</span><span>SQL</span></p></div>
+    <div><h3>Frontend</h3><p class="tags"><span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>React.js</span><span>jQuery</span><span>Chart.js</span></p></div>
+    <div><h3>Backend</h3><p class="tags"><span>Django</span><span>Flask</span><span>Tornado</span><span>REST APIs</span><span>WebRTC</span></p></div>
+    <div><h3>Databases</h3><p class="tags"><span>MySQL</span><span>MS SQL Server</span><span>SQLite</span></p></div>
+    <div><h3>Libraries</h3><p class="tags"><span>pandas</span><span>openpyxl</span><span>ReportLab</span><span>requests</span><span>pyodbc</span><span>python-dotenv</span></p></div>
+    <div><h3>Practices and tools</h3><p class="tags"><span>OOP</span><span>Audit logging</span><span>SMTP e-mail</span><span>Agile</span><span>Git</span><span>GitHub</span><span>VS Code</span><span>Render</span></p></div>
+  </div>
+</section>
+
+<section id="contact" class="block contact">
+  <h2>Let's work together</h2>
+  <p class="lead">I'm looking for an entry-level Software Developer role. The quickest way to reach me is e-mail.</p>
+  <p class="mailrow"><span id="mail">santhiyathinakaran28@gmail.com</span>
+    <button type="button" class="btn" id="copy">Copy email</button>
+    <a class="btn primary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=santhiyathinakaran28@gmail.com&amp;su=Hello%20Santhiya" target="_blank" rel="noopener">Write in Gmail</a></p>
+  <p class="social"><a href="tel:+917010182513">+91 70101 82513</a><a href="https://linkedin.com/in/santhiyathinakaran">LinkedIn</a><a href="https://github.com/santhiyathinakaran">GitHub</a></p>
+</section>
+</main>
+<footer><p>Santhiya P · Tirunelveli, Tamil Nadu</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
